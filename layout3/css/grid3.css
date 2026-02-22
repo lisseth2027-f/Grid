@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    height: 100vh;
+    grid-template-areas:
+        "cabecera cabecera cabecera"
+        "content1 content2 content3"
+        "footer footer footer"
+    ;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    padding: 15px;
+ 
+}
+.cabecera{
+    grid-area: cabecera;
+}
+.content1{
+    grid-area: content1;
+}
+.content2{
+    grid-area: content2;
+}
+.content3{
+    grid-area: content3;
+}
+.footer{
+    grid-area: footer;
+}
